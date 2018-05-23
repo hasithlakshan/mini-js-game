@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			var margin=10;
+			var margin1=50;
+			function run() {
+
+				var bulletElement=document.getElementById("Ball");
+				bulletElement.style.marginTop=margin+"px";
+				margin+=50;
+				if (margin<600) {
+					if (margin1>199&margin1<280&margin>280&margin<380) {
+						alert("die");
+
+					}
+					setTimeout("run()",150);
+					
+				}else{
+					 margin=20;
+					 setTimeout("run1()",150);
+					
+				}
+				
+
+				// run();
+				//alert("run");
+				
+			}
+			function run1() {
+
+				var bulletElement1=document.getElementById("Ball1");
+				bulletElement1.style.marginTop=margin+"px";
+				margin+=50;
+				if (margin<600) {
+					if (margin1>349&margin1<500&margin>280&margin<380) {
+						alert("die");
+
+					}
+					setTimeout("run1()",100);
+				}else{
+					margin=20;
+					setTimeout("run2()",100);
+				}
+				
+
+				// run();
+				//alert("run");
+				
+			}
+			function run2() {
+
+				var bulletElement2=document.getElementById("Ball2");
+				bulletElement2.style.marginTop=margin+"px";
+				margin+=50;
+				if (margin<600) {
+					if (margin1>549&margin1<651&margin>280&margin<380) {
+						alert("die");
+
+					}
+					setTimeout("run2()",100);
+				}else{
+					margin=20;
+					setTimeout("run3()",100);
+				}
+				
+
+				// run();
+				//alert("run");
+				
+			}
+
+			function run3() {
+
+				var bulletElement3=document.getElementById("Ball3");
+				bulletElement3.style.marginTop=margin+"px";
+				margin+=50;
+				if (margin<600) {
+					if (margin1>749&margin1<849&margin>280&margin<380) {
+						alert("die");
+
+					}
+
+					setTimeout("run3()",100);
+				}else{
+					margin=20;
+					setTimeout("run4()",100);
+				}
+				
+
+				// run();
+				//alert("run");
+				
+			}
+
+			function run4() {
+
+				var bulletElement4=document.getElementById("Ball4");
+				bulletElement4.style.marginTop=margin+"px";
+				margin+=50;
+				if (margin<600) {
+						if (margin1>900&margin1<1001&margin>280&margin<380) {
+						alert("die");
+
+					}
+					setTimeout("run4()",100);
+				}else{
+					margin=20;
+					setTimeout("run()",100);
+				}
+				
+
+				// run();
+				//alert("run");
+				
+			}
+			function rabbitRun() {
+
+				var rabbitElement=document.getElementById("rabbit");
+				rabbitElement.style.marginLeft=margin1+"px";
+				margin1+=50;
+				if (margin1>1000) {
+					alert(" congratulation!!! you won the game");
+				}
+				
+
+				// run();
+				//alert("run");
+				
+			}
+			
+
+			 // onload=run1;
+			  onload=run;
+
+		</script>
+		<div style="background-color: yellow; width:100%;height: 750px">\
+
+
+			<div style="background-color: black;border:3px solid black; width: 100px; height: 100px; margin-left:50px; margin-top:300px; float: left ">
+
+					<img src="rabbit.png" id="rabbit" onclick="rabbitRun()" style="width: 100px;height: 100px">
+				
+				
+
+			</div>
+
+			
+
+
+				<img src="fireBall.png" id="Ball"  style="width: 100px;height: 100px; margin-left:80px; margin-top:20px; float: left ">
+
+			
+				<img src="fireBall.png" id="Ball1"  style="width: 100px;height: 100px;margin-left:80px; margin-top:20px; float: left ">
+			
+
+			
+				<img src="fireBall.png" id="Ball2"  style="width: 100px;height: 100px; margin-left:80px; margin-top:20px; float: left">
+			
+
+			
+				<img src="fireBall.png" id="Ball3"  style="width: 100px;height: 100px; margin-left:80px; margin-top:20px; float: left">
+			
+
+			
+				<img src="fireBall.png" id="Ball4" onclick="run()"/ style="width: 100px;height: 100px; margin-left:80px; margin-top:20px; float: left">
+			
+
+			<div style="background-color: white;border:3px solid black; width: 100px; height: 100px; margin-left:80px; margin-top:300px; float: left ">
+
+					<center><H1>End</H1></center>
+
+			</div>
+		
+		</div>
+
+</body>
+</html>
